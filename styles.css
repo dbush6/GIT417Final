@@ -1,0 +1,466 @@
+:root{
+    --red: #cb2b26;
+    --blue: #124e80;
+    --tan: #fff6e3;
+    --green: #008000;
+    --white: #fff;
+    --black: #000;
+}
+
+/* HEADER */
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; 
+    align-items: center;
+    padding: 20px;
+    background: var(--tan);
+    color: var(--blue);
+    position: relative;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--tan);
+}
+
+#logo img {
+    max-height: 200px; 
+}
+  
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+}
+  
+nav ul li a {
+    text-decoration: none;
+    color: var(--blue);   
+    font-family: 'Orbitron', sans-serif; 
+    letter-spacing: 2px;
+    transition: color 0.3s;
+}
+  
+nav ul li a:hover {
+    color: var(--red);
+}
+
+  /* DARK MODE */
+  
+#dark-mode-toggle {
+    background: var(--blue);
+    border: none;
+    border-radius: 50%; 
+    width: 40px; 
+    height: 40px; 
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0; 
+}
+  
+#dark-mode-toggle svg {
+    width: 50px;
+    height: auto;
+}
+
+  
+body.dark-mode {
+    background-color: var(--blue);
+    color: var(--tan);
+}
+
+body.dark-mode #dark-mode-toggle {
+    background: var(--white);
+    color: var(--blue);
+}
+  
+body.dark-mode #team-display {
+    background: var(--blue);
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+body.dark-mode #team-display button {
+    border: 1px solid var(--white);
+}
+
+body.dark-mode #game {
+    background-color: var(--blue);
+    width: 97%;
+    border: 20px solid var(--red);
+}
+  
+body.dark-mode form {
+    background: var(--blue);
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+body.dark-mode #dark-mode-toggle svg {
+    fill: var(--blue);
+}
+
+body.dark-mode label {
+    color: var(--white);
+    background: var(--blue);
+}
+  
+body.dark-mode input, body.dark-mode textarea {
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+  
+body.dark-mode input::placeholder, body.dark-mode textarea::placeholder {
+    color: var(--white);
+}
+
+body.dark-mode fieldset {
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+  /* ABOUT */
+
+#about {
+    background: var(--blue);
+    color: var(--white);
+    text-align: center;
+    padding: 80px 20px;
+    position: relative;
+    overflow: hidden;
+}
+  
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+  
+#about .tagline {
+    font-style: italic;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--red);
+}
+  
+#about p {
+    line-height: 1.5;
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto 20px;
+}
+
+#about h2 .highlight {
+    color: var(--tan);
+}
+
+  /* PRODUCT */
+
+.teams {
+    display: flex;
+}
+
+.teams > div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  
+    gap: 10px; 
+    justify-items: center; 
+    align-items: center;
+    padding: 15px;
+}
+  
+.teams > div img {
+    width: 25px;
+    height: auto;
+}
+
+.teams {
+    justify-content: center;
+}
+  
+.teams > div .league-logo {
+    grid-column: 1 / -1;
+    width: auto; 
+    height: 100px;
+    margin-bottom: 10px;
+}
+  
+.teams > div img:not(.league-logo) {
+    width: 40px; 
+    height: auto;
+}
+
+#mlb-logo {
+    width: 100px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#team-display {
+    border: 1px solid var(--blue);
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+    background: var(--white);
+    color: var(--blue);
+}
+  
+#team-display img {
+    width: 150px;
+    height: auto;
+    margin: 10px 0;
+}
+
+  /* GAME */
+
+#game {
+    background-color: var(--red);
+    width: 97%;
+    border: 20px solid var(--blue);
+}
+
+#game-play {
+    color: var(--blue);
+    background: var(--tan);
+    padding: 40px;
+    text-align: center;
+    max-width: 360px;
+    margin: 40px auto;
+}
+  
+#game-play input[type="number"] {
+    width: 80px;
+    padding: 8px;
+    border: 1px solid var(--blue);
+    border-radius: 4px;
+    margin-right: 10px;
+    text-align: center;
+}
+  
+#guess-btn {
+    background: var(--blue);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+  
+#game-result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+  /* FORM */
+
+form {
+    background: var(--white);
+    border: 1px solid var(--blue);
+    padding: 40px;
+    width: 440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+  
+form label {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+  
+form input[type="text"],
+form input[type="tel"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+  
+form textarea {
+    resize: vertical;
+}
+  
+form fieldset {
+    border: 1px solid var(--blue);
+    padding: 10px;
+}
+  
+form legend {
+    font-weight: bold;
+}
+  
+form input[type="radio"] + label {
+    margin-right: 10px;
+}
+  
+.error {
+    color: var(--red);
+    font-size: 0.9em;
+    text-align: left;
+}
+  
+.success-message {
+    color: var(--green);
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: var(--red);
+}
+
+.input-group, .textarea-group, .radio-group {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 14px 12px;
+    border: 1px solid var(--blue);
+    border-radius: 8px;
+    outline: none;
+    background: transparent;
+    transition: border-color 0.5s, box-shadow 0.5s;
+    resize: vertical;
+    min-height: 20px;
+}
+
+textarea {
+    min-height: 100px;
+    justify-content: center;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--blue);
+}
+
+label {
+    color: var(--blue);
+    background: var(--white);
+    padding: 0 10px;
+}
+
+input, textarea {
+    top: -8px;
+    left: 10px;
+    font-size: 15px;
+    color: var(--black);
+}
+
+
+button {
+    width: 100%;
+    background: var(--blue);
+    color: var(--white);
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--blue);
+}
+
+fieldset {
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    border-radius: 8px;
+    padding: 15px 15px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+#my-submit {
+    width: 100%;
+    background-color: var(--blue);
+    color: var(--white);
+    cursor: pointer
+}
+
+/* FOOTER */
+
+
+#social {
+    text-align: center;
+    padding: 40px 20px;
+}
+  
+#social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    gap: 20px;
+}
+  
+#social li {
+    display: inline-block;
+}
+  
+#social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--blue);
+    color: var(--white);
+    text-decoration: none;
+    transition: background 0.5s, transform 0.5s;
+}
+
+  
+#social svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
+  
+#social a:hover {
+    color: var(--red);
+    transform: scale(2);
+}
+
+#footer {
+    justify-items: center;
+    color: var(--blue);
+}
+
+footer {
+    background-color: var(--tan);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

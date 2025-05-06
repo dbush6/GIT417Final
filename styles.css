@@ -9,9 +9,10 @@
 
 /* HEADER */
 header {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr; 
+    display: flex;
+    flex-wrap: wrap; 
     align-items: center;
+    justify-content: center;
     padding: 20px;
     background: var(--tan);
     color: var(--blue);
@@ -30,10 +31,12 @@ body {
 nav ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 35px;
     margin: 0;
     padding: 0;
+    list-style: none;
 }
   
 nav ul li a {
@@ -42,6 +45,8 @@ nav ul li a {
     font-family: 'Orbitron', sans-serif; 
     letter-spacing: 2px;
     transition: color 0.3s;
+    font-size: 1rem;
+    padding: 6px 12px;
 }
   
 nav ul li a:hover {
@@ -51,6 +56,9 @@ nav ul li a:hover {
   /* DARK MODE */
   
 #dark-mode-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
     background: var(--blue);
     border: none;
     border-radius: 50%; 
@@ -124,6 +132,10 @@ body.dark-mode fieldset {
     border: 1px solid var(--white);
 }
 
+body.dark-mode form h2, body.dark-mode form p {
+    color: var(--white);
+}
+
   /* ABOUT */
 
 #about {
@@ -158,13 +170,18 @@ body.dark-mode fieldset {
 
 #about h2 .highlight {
     color: var(--tan);
+    font-style: italic;
 }
 
   /* PRODUCT */
 
-.teams {
-    display: flex;
-}
+  .teams {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
 
 .teams > div {
     display: grid;
@@ -178,10 +195,6 @@ body.dark-mode fieldset {
 .teams > div img {
     width: 25px;
     height: auto;
-}
-
-.teams {
-    justify-content: center;
 }
   
 .teams > div .league-logo {
@@ -212,6 +225,10 @@ body.dark-mode fieldset {
     background: var(--white);
     color: var(--blue);
 }
+
+#team-display h3 {
+    font-size: 2rem;
+}
   
 #team-display img {
     width: 150px;
@@ -219,7 +236,54 @@ body.dark-mode fieldset {
     margin: 10px 0;
 }
 
-  /* GAME */
+/* CHECKOUT */
+
+#checkout-section {
+    background: var(--white);
+    border: 1px solid var(--blue);
+    padding: 40px;
+    width: 440px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+#checkout-section h3 {
+    color: var(--blue);
+    margin-bottom: 10px;
+}
+  
+#checkout-section p {
+    margin: 8px 0;
+    font-size: 1rem;
+    color: var(--black);
+}
+  
+#checkout-section button {
+    width: 100%;
+    background: var(--blue);
+    color: var(--white);
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+  
+#checkout-section button:hover {
+    background: var(--red);
+}
+  
+.success-message {
+    color: var(--green);
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* GAME */
 
 #game {
     background-color: var(--red);
@@ -230,6 +294,7 @@ body.dark-mode fieldset {
 #game-play {
     color: var(--blue);
     background: var(--tan);
+    border: 1px solid var(--blue);
     padding: 40px;
     text-align: center;
     max-width: 360px;
@@ -237,10 +302,9 @@ body.dark-mode fieldset {
 }
   
 #game-play input[type="number"] {
-    width: 80px;
+    width: 50px;
     padding: 8px;
     border: 1px solid var(--blue);
-    border-radius: 4px;
     margin-right: 10px;
     text-align: center;
 }
@@ -250,7 +314,7 @@ body.dark-mode fieldset {
     color: var(--white);
     border: none;
     padding: 10px 20px;
-    border-radius: 8px;
+    border-radius: 25px;
     cursor: pointer;
     margin-top: 10px;
 }
@@ -260,6 +324,16 @@ body.dark-mode fieldset {
     font-size: 1.2rem;
     font-weight: bold;
 }
+
+.input-area {
+    background: var(--white);
+    padding: 20px;
+    border: 1px solid var(--blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
 
   /* FORM */
 
@@ -276,6 +350,27 @@ form {
     box-sizing: border-box;
     margin-bottom: 20px;
     margin-top: 20px;
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 5px;
+    color: var(--blue);
+    text-transform: uppercase;
+  }
+
+form p {
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--blue);
+}
+
+form h2 .highlight {
+    color: var(--red);
+}
+
+.highlight2 {
+    font-style: italic;
 }
   
 form label {
@@ -323,12 +418,6 @@ form input[type="radio"] + label {
     text-align: center;
 }
 
-form h2 {
-    text-align: center;
-    margin-bottom: 24px;
-    color: var(--red);
-}
-
 .input-group, .textarea-group, .radio-group {
     position: relative;
     margin-bottom: 24px;
@@ -371,18 +460,20 @@ input, textarea {
 
 
 button {
-    width: 100%;
-    background: var(--blue);
-    color: var(--white);
-    border: none;
+    border: 1px solid var(--blue);
     padding: 14px;
-    border-radius: 8px;
+    border-radius: 25px;
     font-size: 16px;
+    width: 200px;
+    background-color: var(--blue);
+    color: var(--white);
     cursor: pointer;
+    border-radius: 25px;
+    margin: 0 auto;
 }
 
 button:hover {
-    background: var(--blue);
+    background: var(--red);
 }
 
 fieldset {
@@ -397,10 +488,17 @@ fieldset {
 }
 
 #my-submit {
-    width: 100%;
+    width: 200px;
     background-color: var(--blue);
     color: var(--white);
-    cursor: pointer
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+    margin: 0 auto;
+}
+
+#my-submit:hover {
+    background: var(--red);
 }
 
 /* FOOTER */
@@ -455,8 +553,8 @@ fieldset {
 
 footer {
     background-color: var(--tan);
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 #contact {
@@ -464,3 +562,17 @@ footer {
     align-items: center;
     gap: 10px;
 }
+
+/* MEDIA */
+
+@media (max-width: 1024px) {
+    .teams {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .teams {
+      grid-template-columns: 1fr;
+    }
+  }

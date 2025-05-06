@@ -4,7 +4,9 @@
         <meta charset="utf-8">
         <title>GIT417Final</title>
         <meta name="author" content="Darren Bush">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
     </head>
     <body>
         <header>
@@ -170,23 +172,36 @@
                     </div>
                 </div>
                 <div id="team-display">
-                    <h3 id="team-name">Select a team</h3>
+                    <h3 id="team-name">SELECT A TEAM</h3>
                     <img id="team-image" src="" alt="">
                     <p id="team-description"></p>
                     <button id="add-to-cart">Add to Cart | $2.99</button>
                   </div>
+                  <div id="checkout-section" style="display: none;">
+                    <h3>Order Summary</h3>
+                    <p>Items: <span id="item-count">0</span></p>
+                    <p>Subtotal: $<span id="subtotal">0.00</span></p>
+                    <p>Tax (7%): $<span id="tax">0.00</span></p>
+                    <p>Total: $<span id="total">0.00</span></p>
+                    <button id="button">Check Out</button>
+                    <p id="checkout-message" class="success-message"></p>
+                  </div>
             </section>
             <section id="game">
                 <section id="game-play">
-                    <h2>StickerHub Game Play<br>Win a FREE Sticker!</h2>
-                    <p>Guess a number between 1 and 10:</p>
+                  <h2>Win a <span class="highlight2">FREE</span> Sticker!</h2>
+                  <p>Guess a number between 1 and 10:</p>
+                  <div class="input-area">
                     <input type="number" id="guess-input" min="1" max="10">
-                    <button id="guess-btn">Submit Guess</button>
-                    <div id="game-result"></div>
-                  </section>
-            </section>
+                    <button id="button">Submit Guess</button>
+                  </div>
+                  <div id="game-result"></div>
+                </section>
+              </section>
             <section id="contact">
                 <form>
+                    <h2>Contact <span class="highlight">Sticker</span><span class="highlight2">Hub</span></h2>
+                    <p>We'd love to hear from you!</p>
                     <label for="my-full-name">Full Name<span class="required">*</span></label>
                     <input type="text" name="my-full-name" id="my-full-name">
                     <span class="error" id="name-error"></span>
@@ -204,7 +219,7 @@
                     <span class="error" id="comments-error"></span>
 
                     <fieldset id="contact">
-                    <legend>Contact<span class="required">*</span></legend>
+                    <legend>Contact</legend>
 
                     <input type="radio" name="contact-pref" id="pref-phone" checked>
                     <label for="pref-phone">Phone</label>
@@ -235,6 +250,5 @@
                 </div>
             </section>
         </footer>
-        <script src="script.js"></script>
     </body>
 </html>

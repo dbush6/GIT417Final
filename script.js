@@ -531,6 +531,53 @@ teamLogos.forEach(logo => {
   });
 });
 
+/* CHECkOUT */
+
+let itemCount = 0;
+const itemPrice = 2.99;
+const taxRate = 0.07;
+
+const addToCartBtn = document.getElementById('add-to-cart');
+const checkoutSection = document.getElementById('checkout-section');
+const itemCountSpan = document.getElementById('item-count');
+const subtotalSpan = document.getElementById('subtotal');
+const taxSpan = document.getElementById('tax');
+const totalSpan = document.getElementById('total');
+const checkoutBtn = document.getElementById('checkout-btn');
+const checkoutMessage = document.getElementById('checkout-message');
+
+addToCartBtn.addEventListener('click', () => {
+  itemCount++;
+  const subtotal = itemCount * itemPrice;
+  const tax = subtotal * taxRate;
+  const total = subtotal + tax;
+
+  itemCountSpan.textContent = itemCount;
+  subtotalSpan.textContent = subtotal.toFixed(2);
+  taxSpan.textContent = tax.toFixed(2);
+  totalSpan.textContent = total.toFixed(2);
+
+  checkoutSection.style.display = 'block';
+  checkoutMessage.textContent = '';
+});
+
+checkoutBtn.addEventListener('click', () => {
+  if (itemCount === 0) {
+    checkoutMessage.textContent = 'Please add an item to the cart before checking out.';
+    checkoutMessage.style.color = 'var(--red)';
+  } else {
+    const finalTotal = totalSpan.textContent;
+    checkoutMessage.textContent = `Thank you for your order! Your total was $${finalTotal}.`;
+    checkoutMessage.style.color = 'var(--green)';
+
+    itemCount = 0;
+    itemCountSpan.textContent = '0';
+    subtotalSpan.textContent = '0.00';
+    taxSpan.textContent = '0.00';
+    totalSpan.textContent = '0.00';
+  }
+});
+
 /* GAME */
 
 document.getElementById('guess-btn').addEventListener('click', function() {

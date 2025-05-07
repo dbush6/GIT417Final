@@ -655,10 +655,7 @@ document.querySelector('form').addEventListener('submit', function(e) {
     document.querySelector('form').reset();
 
     document.getElementById('success-message').innerHTML = `
-      Thank you, ${customer.fullName}!<br>
-      We will contact you via ${customer.contactPreference}.<br>
-      Your message: "${customer.comments}"<br>
-      Email: ${customer.email}${customer.phone ? `<br>Phone: ${customer.phone}` : ''}
+      Thank you for your comments!
     `;
 
     console.log('Customer object:', customer);

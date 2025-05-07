@@ -7,506 +7,505 @@
     document.body.classList.toggle('dark-mode');
   });
 
-
 /* ABOUT */
 
 /* PRODUCTS */
 
 const teamData = {
   "Arizona Diamondbacks": {
-    image: "images/MLB logos/Arizona Diamondbacks.png",
+    image: "images/MLBlogos/ArizonaDiamondbacks.png",
     description: "Show your Arizona pride with this Diamondbacks sticker!"
   },
   "Atlanta Braves": {
-    image: "images/MLB logos/Atlanta Braves.png",
+    image: "images/MLBlogos/AtlantaBraves.png",
     description: "Show your Atlanta pride with this Braves sticker!"
   },
   "Baltimore Orioles": {
-    image: "images/MLB logos/Baltimore Orioles.png",
+    image: "images/MLBlogos/BaltimoreOrioles.png",
     description: "Show your Baltimore pride with this Orioles sticker!"
   },
   "Boston Red Sox": {
-    image: "images/MLB logos/Boston Red Sox.png",
+    image: "images/MLBlogos/BostonRedSox.png",
     description: "Show your Boston pride with this Red Sox sticker!"
   },
   "Chicago Cubs": {
-    image: "images/MLB logos/Chicago Cubs.png",
+    image: "images/MLBlogos/ChicagoCubs.png",
     description: "Show your Chicago pride with this Cubs sticker!"
   },
   "Chicago White Sox": {
-    image: "images/MLB logos/Chicago White Sox.png",
+    image: "images/MLBlogos/ChicagoWhiteSox.png",
     description: "Show your Chicago pride with this White Sox sticker!"
   },
   "Cincinnati Reds": {
-    image: "images/MLB logos/Cincinnati Reds.png",
+    image: "images/MLBlogos/CincinnatiReds.png",
     description: "Show your Cincinnati pride with this Reds sticker!"
   },
   "Cleveland Guardians": {
-    image: "images/MLB logos/Cleveland Guardians.png",
+    image: "images/MLBlogos/ClevelandGuardians.png",
     description: "Show your Cleveland pride with this Guardians sticker!"
   },
   "Colorado Rockies": {
-    image: "images/MLB logos/Colorado Rockies.png",
+    image: "images/MLBlogos/ColoradoRockies.png",
     description: "Show your Colorado pride with this Rockies sticker!"
   },
   "Detroit Tigers": {
-    image: "images/MLB logos/Detroit Tigers.png",
+    image: "images/MLBlogos/DetroitTigers.png",
     description: "Show your Detroit pride with this Tigers sticker!"
   },
   "Houston Astros": {
-    image: "images/MLB logos/Houston Astros.png",
+    image: "images/MLBlogos/HoustonAstros.png",
     description: "Show your Houston pride with this Astros sticker!"
   },
   "Kansas City Royals": {
-    image: "images/MLB logos/Kansas City Royals.png",
+    image: "images/MLBlogos/KansasCityRoyals.png",
     description: "Show your Kansas City pride with this Royals sticker!"
   },
   "Las Vegas Athletics": {
-    image: "images/MLB logos/Las Vegas Athletics.png",
+    image: "images/MLBlogos/LasVegasAthletics.png",
     description: "Show your Las Vegas pride with this Athletics sticker!"
   },
   "Los Angeles Angels": {
-    image: "images/MLB logos/Los Angeles Angels.png",
+    image: "images/MLBlogos/LosAngelesAngels.png",
     description: "Show your Los Angeles pride with this Angels sticker!"
   },
   "Los Angeles Dodgers": {
-    image: "images/MLB logos/Los Angeles Dodgers.png",
+    image: "images/MLBlogos/LosAngelesDodgers.png",
     description: "Show your Los Angeles pride with this sleek Diamondbacks sticker!"
   },
   "Miami Marlins": {
-    image: "images/MLB logos/Miami Marlins.png",
+    image: "images/MLBlogos/MiamiMarlins.png",
     description: "Show your Arizona pride with this sleek Diamondbacks sticker!"
   },
   "Milwaukee Brewers": {
-    image: "images/MLB logos/Milwaukee Brewers.png",
+    image: "images/MLBlogos/MilwaukeeBrewers.png",
     description: "Show your Arizona pride with this sleek Diamondbacks sticker!"
   },
   "Minnesota Twins": {
-    image: "images/MLB logos/Minnesota Twins.png",
+    image: "images/MLBlogos/MinnesotaTwins.png",
     description: "Show your Arizona pride with this sleek Diamondbacks sticker!"
   },
   "New York Mets": {
-    image: "images/MLB logos/New York Mets.png",
+    image: "images/MLBlogos/NewYorkMets.png",
     description: "Show your New York pride with this Mets sticker!"
   },
   "New York Yankees": {
-    image: "images/MLB logos/New York Yankees.png",
+    image: "images/MLBlogos/NewYorkYankees.png",
     description: "Show your New York pride with this Yankees sticker!"
   },
   "Philadelphia Phillies": {
-    image: "images/MLB logos/Philadelphia Phillies.png",
+    image: "images/MLBlogos/PhiladelphiaPhillies.png",
     description: "Show your Philadelphis pride with this Phillies sticker!"
   },
   "Pittsburgh Pirates": {
-    image: "images/MLB logos/Pittsburgh Pirates.png",
+    image: "images/MLBlogos/PittsburghPirates.png",
     description: "Show your Pittsburgh pride with this Pirates sticker!"
   },
   "San Diego Padres": {
-    image: "images/MLB logos/San Diego Padres.png",
+    image: "images/MLBlogos/SanDiegoPadres.png",
     description: "Show your San Diego pride with this Padres sticker!"
   },
   "San Francisco Giants": {
-    image: "images/MLB logos/San Francisco Giants.png",
+    image: "images/MLBlogos/SanFranciscoGiants.png",
     description: "Show your San Francisco pride with this Giants sticker!"
   },
   "Seattle Mariners": {
-    image: "images/MLB logos/Seattle Mariners.png",
+    image: "images/MLBlogos/SeattleMariners.png",
     description: "Show your Seattle pride with this Mariners sticker!"
   },
   "St. Louis Cardinals": {
-    image: "images/MLB logos/St. Louis Cardinals.png",
+    image: "images/MLBlogos/St.LouisCardinals.png",
     description: "Show your St. Louis pride with this Cardinals sticker!"
   },
   "Tampa Bay Rays": {
-    image: "images/MLB logos/Tampa Bay Rays.png",
+    image: "images/MLBlogos/TampaBayRays.png",
     description: "Show your Tampa Bay pride with this Rays sticker!"
   },
   "Texas Rangers": {
-    image: "images/MLB logos/Texas Rangers.png",
+    image: "images/MLBlogos/TexasRangers.png",
     description: "Show your Texas pride with this Rangers sticker!"
   },
   "Toronto Blue Jays": {
-    image: "images/MLB logos/Toronto Blue Jays.png",
+    image: "images/MLBlogos/TorontoBlueJays.png",
     description: "Show your Toronto pride with this Blue Jays sticker!"
   },
   "Washington Nationals": {
-    image: "images/MLB logos/Washington Nationals.png",
+    image: "images/MLBlogos/WashingtonNationals.png",
     description: "Show your Washington pride with this Nationals sticker!"
   },
   "Atlanta Hawks": {
-    image: "images/NBA logos/Atlanta Hawks.png",
+    image: "images/NBAlogos/AtlantaHawks.png",
     description: "Show your Atlanta pride with this Hawks sticker!"
   },
   "Boston Celtics": {
-    image: "images/NBA logos/Boston Celtics.png",
+    image: "images/NBAlogos/BostonCeltics.png",
     description: "Show your Boston pride with this Celtics sticker!"
   },
   "Brooklyn Nets": {
-    image: "images/NBA logos/Brooklyn Nets.png",
+    image: "images/NBAlogos/BrooklynNets.png",
     description: "Show your Brooklyn pride with this Nets sticker!"
   },
   "Charlotte Hornets": {
-    image: "images/NBA logos/Charlotte Hornets.png",
+    image: "images/NBAlogos/CharlotteHornets.png",
     description: "Show your Charlotte pride with this Hornets sticker!"
   },
   "Chicago Bulls": {
-    image: "images/NBA logos/Chicago Bulls.png",
+    image: "images/NBAlogos/ChicagoBulls.png",
     description: "Show your CHicago pride with this Bulls sticker!"
   },
   "Cleveland Cavaliers": {
-    image: "images/NBA logos/Cleveland Cavaliers.png",
+    image: "images/NBAlogos/ClevelandCavaliers.png",
     description: "Show your Cleveland pride with this Cavaliers sticker!"
   },
   "Dallas Mavericks": {
-    image: "images/NBA logos/Dallas Mavericks.png",
+    image: "images/NBAlogos/DallasMavericks.png",
     description: "Show your Dallas pride with this sleek Mavericks sticker!"
   },
   "Denver Nuggets": {
-    image: "images/NBA logos/Denver Nuggets.png",
+    image: "images/NBAlogos/DenverNuggets.png",
     description: "Show your Denver pride with this Nuggets sticker!"
   },
   "Detroit Pistons": {
-    image: "images/NBA logos/Detroit Pistons.png",
+    image: "images/NBAlogos/DetroitPistons.png",
     description: "Show your Detroit pride with this Pistons sticker!"
   },
   "Golden State Warriors": {
-    image: "images/NBA logos/Golden State Warriors.png",
+    image: "images/NBAlogos/GoldenStateWarriors.png",
     description: "Show your Golden State pride with this Warriors sticker!"
   },
   "Houston Rockets": {
-    image: "images/NBA logos/Houston Rockets.png",
+    image: "images/NBAlogos/HoustonRockets.png",
     description: "Show your Houston pride with this Rockets sticker!"
   },
   "Indiana Pacers": {
-    image: "images/NBA logos/Indiana Pacers.png",
+    image: "images/NBAlogos/IndianaPacers.png",
     description: "Show your Indiana pride with this Pacers sticker!"
   },
   "Los Angeles Clippers": {
-    image: "images/NBA logos/Los Angeles Clippers.png",
+    image: "images/NBAlogos/LosAngelesClippers.png",
     description: "Show your Los Angeles pride with this Clippers sticker!"
   },
   "Los Angeles Lakers": {
-    image: "images/NBA logos/Los Angeles Lakers.png",
+    image: "images/NBAlogos/LosAngelesLakers.png",
     description: "Show your Los Angeles pride with this Lakers sticker!"
   },
   "Memphis Grizzlies": {
-    image: "images/NBA logos/Memphis Grizzlies.png",
+    image: "images/NBAlogos/MemphisGrizzlies.png",
     description: "Show your Memphis pride with this Grizzlies sticker!"
   },
   "Miami Heat": {
-    image: "images/NBA logos/Miami Heat.png",
+    image: "images/NBAlogos/MiamiHeat.png",
     description: "Show your Miami pride with this Heat sticker!"
   },
   "Milwaukee Bucks": {
-    image: "images/NBA logos/Milwaukee Bucks.png",
+    image: "images/NBAlogos/MilwaukeeBucks.png",
     description: "Show your Milwaukee pride with this Bucks sticker!"
   },
   "Minnesota Timberwolves": {
-    image: "images/NBA logos/Minnesota Timberwolves.png",
+    image: "images/NBAlogos/MinnesotaTimberwolves.png",
     description: "Show your Minnesota pride with this Timberwolves sticker!"
   },
   "New Orleans Pelicans": {
-    image: "images/NBA logos/New Orleans Pelicans.png",
+    image: "images/NBAlogos/NewOrleansPelicans.png",
     description: "Show your New Orleans pride with this Pelicans sticker!"
   },
   "New York Knicks": {
-    image: "images/NBA logos/New York Knicks.png",
+    image: "images/NBAlogos/NewYorkKnicks.png",
     description: "Show your New York pride with this Knicks sticker!"
   },
   "Oklahoma City Thunder": {
-    image: "images/NBA logos/Oklahoma City Thunder.png",
+    image: "images/NBAlogos/OklahomaCityThunder.png",
     description: "Show your Oklahoma City pride with this Thunder sticker!"
   },
   "Orlando Magic": {
-    image: "images/NBA logos/Orlando Magic.png",
+    image: "images/NBAlogos/OrlandoMagic.png",
     description: "Show your Orlando pride with this Magic sticker!"
   },
   "Philadelphia 76ers": {
-    image: "images/NBA logos/Philadelphia 76ers.png",
+    image: "images/NBAlogos/Philadelphia76ers.png",
     description: "Show your Philadelphia pride with this 76ers sticker!"
   },
   "Phoenix Suns": {
-    image: "images/NBA logos/Phoenix Suns.png",
+    image: "images/NBAlogos/PhoenixSuns.png",
     description: "Show your Phoenix pride with this Suns sticker!"
   },
   "Portland Trail Blazers": {
-    image: "images/NBA logos/Portland Trail Blazers.png",
+    image: "images/NBAlogos/PortlandTrailBlazers.png",
     description: "Show your Portland pride with this Trail Blazers sticker!"
   },
   "Sacramento Kings": {
-    image: "images/NBA logos/Sacramento Kings.png",
+    image: "images/NBAlogos/SacramentoKings.png",
     description: "Show your Sacramento pride with this Kings sticker!"
   },
   "San Antonio Spurs": {
-    image: "images/NBA logos/San Antonio Spurs.png",
+    image: "images/NBAlogos/SanAntonioSpurs.png",
     description: "Show your San Antonio pride with this Spurs sticker!"
   },
   "Toronto Raptors": {
-    image: "images/NBA logos/Toronto Raptors.png",
+    image: "images/NBAlogos/TorontoRaptors.png",
     description: "Show your Toronto pride with this Raptors sticker!"
   },
   "Utah Jazz": {
-    image: "images/NBA logos/Utah Jazz.png",
+    image: "images/NBAlogos/UtahJazz.png",
     description: "Show your Utah pride with this Jazz sticker!"
   },
   "Washington Wizards": {
-    image: "images/NBA logos/Washington Wizards.png",
+    image: "images/NBAlogos/WashingtonWizards.png",
     description: "Show your Washington pride with this Wizards sticker!"
   },
   "Arizona Cardinals": {
-    image: "images/NFL logos/Arizona Cardinals.png",
+    image: "images/NFLlogos/ArizonaCardinals.png",
     description: "Show your Arizona pride with this Cardinals sticker!"
   },
   "Atlanta Falcons": {
-    image: "images/NFL logos/Atlanta Falcons.png",
+    image: "images/NFLlogos/AtlantaFalcons.png",
     description: "Show your Atlanta pride with this Falcons sticker!"
   },
   "Baltimore Ravens": {
-    image: "images/NFL logos/Baltimore Ravens.png",
+    image: "images/NFLlogos/BaltimoreRavens.png",
     description: "Show your Baltimore pride with this Ravens sticker!"
   },
   "Buffalo Bills": {
-    image: "images/NFL logos/Buffalo Bills.png",
+    image: "images/NFLlogos/BuffaloBills.png",
     description: "Show your Buffalo pride with this Bills sticker!"
   },
   "Carolina Panthers": {
-    image: "images/NFL logos/Carolina Panthers.png",
+    image: "images/NFLlogos/CarolinaPanthers.png",
     description: "Show your Carolina pride with this Panthers sticker!"
   },
   "Chicago Bears": {
-    image: "images/NFL logos/Chicago Bears.png",
+    image: "images/NFLlogos/ChicagoBears.png",
     description: "Show your Chicago pride with this Bears sticker!"
   },
   "Cincinnati Bengals": {
-    image: "images/NFL logos/Cincinnati Bengals.png",
+    image: "images/NFLlogos/CincinnatiBengals.png",
     description: "Show your Cincinnati pride with this Bengals sticker!"
   },
   "Cleveland Browns": {
-    image: "images/NFL logos/Cleveland Browns.png",
+    image: "images/NFLlogos/ClevelandBrowns.png",
     description: "Show your Cleveland pride with this Browns sticker!"
   },
   "Dallas Cowboys": {
-    image: "images/NFL logos/Dallas Cowboys.png",
+    image: "images/NFLlogos/DallasCowboys.png",
     description: "Show your Dallas pride with this Cowboys sticker!"
   },
   "Denver Broncos": {
-    image: "images/NFL logos/Denver Broncos.png",
+    image: "images/NFLlogos/DenverBroncos.png",
     description: "Show your Denver pride with this Broncos sticker!"
   },
   "Detroit Lions": {
-    image: "images/NFL logos/Detroit Lions.png",
+    image: "images/NFLlogos/DetroitLions.png",
     description: "Show your Detroit pride with this Lions sticker!"
   },
   "Green Bay Packers": {
-    image: "images/NFL logos/Green Bay Packers.png",
+    image: "images/NFLlogos/GreenBayPackers.png",
     description: "Show your Green Bay pride with this Packers sticker!"
   },
   "Houston Texans": {
-    image: "images/NFL logos/Houston Texans.png",
+    image: "images/NFLlogos/HoustonTexans.png",
     description: "Show your Houston pride with this Texans sticker!"
   },
   "Indianapolis Colts": {
-    image: "images/NFL logos/Indianapolis Colts.png",
+    image: "images/NFLlogos/IndianapolisColts.png",
     description: "Show your Indianapolis pride with this Colts sticker!"
   },
   "Jacksonville Jaguars": {
-    image: "images/NFL logos/Jacksonville Jaguars.png",
+    image: "images/NFLlogos/JacksonvilleJaguars.png",
     description: "Show your Jacksonville pride with this Jaguars sticker!"
   },
   "Kansas City Chiefs": {
-    image: "images/NFL logos/Kansas City Chiefs.png",
+    image: "images/NFLlogos/KansasCityChiefs.png",
     description: "Show your Kansas City pride with this Chiefs sticker!"
   },
   "Las Vegas Raiders": {
-    image: "images/NFL logos/Las Vegas Raiders.png",
+    image: "images/NFLlogos/LasVegasRaiders.png",
     description: "Show your Las Vegas pride with this Raiders sticker!"
   },
   "Los Angeles Chargers": {
-    image: "images/NFL logos/Los Angeles Chargers.png",
+    image: "images/NFLlogos/LosAngelesChargers.png",
     description: "Show your Los Angeles pride with this Chargers sticker!"
   },
   "Los Angeles Rams": {
-    image: "images/NFL logos/Los Angeles Rams.png",
+    image: "images/NFLlogos/LosAngelesRams.png",
     description: "Show your Los Angeles pride with this Rams sticker!"
   },
   "Miami Dolphins": {
-    image: "images/NFL logos/Miami Dolphins.png",
+    image: "images/NFLlogos/MiamiDolphins.png",
     description: "Show your Miami pride with this Dolphins sticker!"
   },
   "Minnesota Vikings": {
-    image: "images/NFL logos/Minnesota Vikings.png",
+    image: "images/NFLlogos/MinnesotaVikings.png",
     description: "Show your Minnesota pride with this Vikings sticker!"
   },
   "New England Patriots": {
-    image: "images/NFL logos/New England Patriots.png",
+    image: "images/NFLlogos/NewEnglandPatriots.png",
     description: "Show your New England pride with this Patriots sticker!"
   },
   "New Orleans Saints": {
-    image: "images/NFL logos/New Orleans Saints.png",
+    image: "images/NFLlogos/NewOrleansSaints.png",
     description: "Show your New Orleans pride with this Saints sticker!"
   },
   "New York Giants": {
-    image: "images/NFL logos/New York Giants.png",
+    image: "images/NFLlogos/NewYorkGiants.png",
     description: "Show your New York pride with this Giants sticker!"
   },
   "New York Jets": {
-    image: "images/NFL logos/New York Jets.png",
+    image: "images/NFLlogos/NewYorkJets.png",
     description: "Show your New York pride with this Jets sticker!"
   },
   "Philadelphia Eagles": {
-    image: "images/NFL logos/Philadelphia Eagles.png",
+    image: "images/NFLlogos/PhiladelphiaEagles.png",
     description: "Show your Philadelphia pride with this Eagles sticker!"
   },
   "Pittsburgh Steelers": {
-    image: "images/NFL logos/Pittsburgh Steelers.png",
+    image: "images/NFLlogos/PittsburghSteelers.png",
     description: "Show your Pittsburgh pride with this Steelers sticker!"
   },
   "San Francisco 49ers": {
-    image: "images/NFL logos/San Francisco 49ers.png",
+    image: "images/NFLlogos/SanFrancisco49ers.png",
     description: "Show your San Francisco pride with this 49ers sticker!"
   },
   "Seattle Seahawks": {
-    image: "images/NFL logos/Seattle Seahawks.png",
+    image: "images/NFLlogos/SeattleSeahawks.png",
     description: "Show your Seattle pride with this Seahawks sticker!"
   },
   "Tampa Bay Buccaneers": {
-    image: "images/NFL logos/Tampa Bay Buccaneers.png",
+    image: "images/NFLlogos/TampaBayBuccaneers.png",
     description: "Show your Tampa Bay pride with this Buccaneers sticker!"
   },
   "Tennessee Titans": {
-    image: "images/NFL logos/Tennessee Titans.png",
+    image: "images/NFLlogos/TennesseeTitans.png",
     description: "Show your Tennessee pride with this Titans sticker!"
   },
   "Washington Commanders": {
-    image: "images/NFL logos/Washington Commanders.png",
+    image: "images/NFLlogos/WashingtonCommanders.png",
     description: "Show your Washington pride with this Commanders sticker!"
   },
   "Anaheim Ducks": {
-    image: "images/NHL logos/Anaheim Ducks.png",
+    image: "images/NHLlogos/AnaheimDucks.png",
     description: "Show your Anaheim pride with this Ducks sticker!"
   },
   "Boston Bruins": {
-    image: "images/NHL logos/Boston Bruins.png",
+    image: "images/NHLlogos/BostonBruins.png",
     description: "Show your Boston pride with this Bruins sticker!"
   },
   "Buffalo Sabres": {
-    image: "images/NHL logos/Buffalo Sabres.png",
+    image: "images/NHLlogos/BuffaloSabres.png",
     description: "Show your Buffalo pride with this Sabres sticker!"
   },
   "Calgary Flames": {
-    image: "images/NHL logos/Calgary Flames.png",
+    image: "images/NHLlogos/CalgaryFlames.png",
     description: "Show your Calgary pride with this Flames sticker!"
   },
   "Carolina Hurricanes": {
-    image: "images/NHL logos/Carolina Hurricanes.png",
+    image: "images/NHLlogos/CarolinaHurricanes.png",
     description: "Show your Carolina pride with this Hurricanes sticker!"
   },
   "Chicago Blackhawks": {
-    image: "images/NHL logos/Chicago Blackhawks.png",
+    image: "images/NHLlogos/ChicagoBlackhawks.png",
     description: "Show your Chicago pride with this Blackhawks sticker!"
   },
   "Colorado Avalanche": {
-    image: "images/NHL logos/Colorado Avalanche.png",
+    image: "images/NHLlogos/ColoradoAvalanche.png",
     description: "Show your Colorado pride with this Avalanche sticker!"
   },
   "Columbus Blue Jackets": {
-    image: "images/NHL logos/Columbus Blue Jackets.png",
+    image: "images/NHLlogos/ColumbusBlueJackets.png",
     description: "Show your Columbus pride with this Blue Jackets sticker!"
   },
-  "Dallas Stars ": {
-    image: "images/NHL logos/Dallas Stars.png",
+  "Dallas Stars": {
+    image: "images/NHLlogos/DallasStars.png",
     description: "Show your Dallas pride with this Stars sticker!"
   },
-  "Detroit Red Wings ": {
-    image: "images/NHL logos/Detroit Red Wings.png",
+  "Detroit Red Wings": {
+    image: "images/NHLlogos/DetroitRedWings.png",
     description: "Show your Detroit pride with this Red Wings sticker!"
   },
   "Edmonton Oilers": {
-    image: "images/NHL logos/Edmonton Oilers.png",
+    image: "images/NHLlogos/EdmontonOilers.png",
     description: "Show your Edmonton pride with this Oilers sticker!"
   },
   "Florida Panthers": {
-    image: "images/NHL logos/Florida Panthers.png",
+    image: "images/NHLlogos/FloridaPanthers.png",
     description: "Show your Florida pride with this Panthers sticker!"
   },
   "Los Angeles Kings": {
-    image: "images/NHL logos/Los Angeles Kings.png",
+    image: "images/NHLlogos/LosAngelesKings.png",
     description: "Show your Los Angeles pride with this Kings sticker!"
   },
   "Minnesota Wild": {
-    image: "images/NHL logos/Minnesota Wild.png",
+    image: "images/NHLlogos/MinnesotaWild.png",
     description: "Show your Minnesota pride with this Wild sticker!"
   },
   "Montreal Canadiens": {
-    image: "images/NHL logos/Montreal Canadiens.png",
+    image: "images/NHLlogos/MontrealCanadiens.png",
     description: "Show your Montreal pride with this Canadiens sticker!"
   },
   "Nashville Predators": {
-    image: "images/NHL logos/Nashville Predators.png",
+    image: "images/NHLlogos/NashvillePredators.png",
     description: "Show your Nashville pride with this Predators sticker!"
   },
   "New Jersey Devils": {
-    image: "images/NHL logos/New Jersey Devils.png",
+    image: "images/NHLlogos/NewJerseyDevils.png",
     description: "Show your New Jersey pride with this Devils sticker!"
   },
   "New York Islanders": {
-    image: "images/NHL logos/New York Islanders.png",
+    image: "images/NHLlogos/NewYorkIslanders.png",
     description: "Show your New York pride with this Islanders sticker!"
   },
   "New York Rangers": {
-    image: "images/NHL logos/New York Rangers.png",
+    image: "images/NHLlogos/NewYorkRangers.png",
     description: "Show your New York pride with this Rangers sticker!"
   },
   "Ottawa Senators": {
-    image: "images/NHL logos/Ottawa Senators.png",
+    image: "images/NHLlogos/OttawaSenators.png",
     description: "Show your Ottawa pride with this Senators sticker!"
   },
   "Philadelphia Flyers": {
-    image: "images/NHL logos/Philadelphia Flyers.png",
+    image: "images/NHLlogos/PhiladelphiaFlyers.png",
     description: "Show your Philadelphia pride with this Flyers sticker!"
   },
   "Pittsburgh Penguins": {
-    image: "images/NHL logos/Pittsburgh Penguins.png",
+    image: "images/NHLlogos/PittsburghPenguins.png",
     description: "Show your Pittsburgh pride with this Penguins sticker!"
   },
   "San Jose Sharks": {
-    image: "images/NHL logos/San Jose Sharks.png",
+    image: "images/NHLlogos/SanJoseSharks.png",
     description: "Show your San Jose pride with this Sharks sticker!"
   },
   "Seattle Kraken": {
-    image: "images/NHL logos/Seattle Kraken.png",
+    image: "images/NHLlogos/SeattleKraken.png",
     description: "Show your Seattle pride with this Kraken sticker!"
   },
   "St. Louis Blues": {
-    image: "images/NHL logos/St. Louis Blues.png",
+    image: "images/NHLlogos/St.LouisBlues.png",
     description: "Show your St. Louis pride with this Blues sticker!"
   },
   "Tampa Bay Lightning": {
-    image: "images/NHL logos/Tampa Bay Lightning.png",
+    image: "images/NHLlogos/TampaBayLightning.png",
     description: "Show your Tampa Bay pride with this Lightning sticker!"
   },
   "Toronto Maple Leafs": {
-    image: "images/NHL logos/Toronto Maple Leafs.png",
+    image: "images/NHLlogos/TorontoMapleLeafs.png",
     description: "Show your Toronto pride with this Maple Leafs sticker!"
   },
   "Utah Hockey Club": {
-    image: "images/NHL logos/Utah Hockey Club.png",
+    image: "images/NHLlogos/UtahHockeyClub.png",
     description: "Show your Utah pride with this Hockey Club sticker!"
   },
   "Vancouver Canucks": {
-    image: "images/NHL logos/Vancouver Canucks.png",
+    image: "images/NHLlogos/VancouverCanucks.png",
     description: "Show your Vancouver pride with this Canucks sticker!"
   },
   "Vegas Golden Knights": {
-    image: "images/NHL logos/Vegas Golden Knights.png",
+    image: "images/NHLlogos/VegasGoldenKnights.png",
     description: "Show your Vegas pride with this Golden Knights sticker!"
   },
   "Washington Capitals": {
-    image: "images/NHL logos/Washington Capitals.png",
+    image: "images/NHLlogos/WashingtonCapitals.png",
     description: "Show your Washington pride with this Capitals sticker!"
   },
   "Winnipeg Jets": {
-    image: "images/NHL logos/Winnipeg Jets.png",
+    image: "images/NHLlogos/WinnipegJets.png",
     description: "Show your Winnipeg pride with this Jets sticker!"
   },
 };

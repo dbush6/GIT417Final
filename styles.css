@@ -264,10 +264,10 @@ body.dark-mode form h2, body.dark-mode form p {
 }
   
 #checkout-section button {
-    width: 100%;
+    width: 200px;
     background: var(--blue);
     color: var(--white);
-    padding: 10px;
+    padding: 15px;
     border-radius: 25px;
     font-size: 1rem;
     cursor: pointer;
@@ -276,12 +276,6 @@ body.dark-mode form h2, body.dark-mode form p {
 #checkout-section button:hover {
     background: var(--red);
 }
-  
-.success-message {
-    color: var(--green);
-    font-weight: bold;
-    margin-top: 10px;
-}
 
 /* GAME */
 
@@ -289,6 +283,14 @@ body.dark-mode form h2, body.dark-mode form p {
     background-color: var(--red);
     width: 97%;
     border: 20px solid var(--blue);
+}
+
+#game h2 {
+    visibility: hidden;
+}
+
+#game h3 {
+    font-size: 35px;
 }
 
 #game-play {
@@ -300,15 +302,14 @@ body.dark-mode form h2, body.dark-mode form p {
     max-width: 360px;
     margin: 40px auto;
 }
-  
+
 #game-play input[type="number"] {
     width: 50px;
     padding: 8px;
     border: 1px solid var(--blue);
-    margin-right: 10px;
     text-align: center;
 }
-  
+
 #guess-btn {
     background: var(--blue);
     color: var(--white);
@@ -318,7 +319,7 @@ body.dark-mode form h2, body.dark-mode form p {
     cursor: pointer;
     margin-top: 10px;
 }
-  
+
 #game-result {
     margin-top: 20px;
     font-size: 1.2rem;
@@ -333,7 +334,7 @@ body.dark-mode form h2, body.dark-mode form p {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-  }
+}
 
   /* FORM */
 
@@ -557,7 +558,16 @@ footer {
     padding-top: 10px;
 }
 
-#contact {
+footer h2 {
+    color: var(--red);
+}
+
+footer h2 .highlight {
+    color: var(--blue);
+    font-style: italic;
+}
+
+.contact {
     display: flex;
     align-items: center;
     gap: 10px;

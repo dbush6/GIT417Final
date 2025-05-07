@@ -7,9 +7,9 @@
     document.body.classList.toggle('dark-mode');
   });
 
-/* ABOUT */
+/* ABOUT none needed*/
 
-/* PRODUCTS */
+/* PRODUCTS - getting all of the teams logos and getting them to show properly was the longest and hardest part of this */
 
 const teamData = {
   "Arizona Diamondbacks": {
@@ -530,7 +530,7 @@ teamLogos.forEach(logo => {
   });
 });
 
-/* CHECkOUT */
+/* CHECkOUT calculates items amount times tax to equal subtotal*/
 
 let itemCount = 0;
 const itemPrice = 2.99;
@@ -662,4 +662,4 @@ document.querySelector('form').addEventListener('submit', function(e) {
   }
 });
 
-/* CONTACT */
+/* CONTACT none needed*/
